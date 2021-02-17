@@ -1,0 +1,100 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	font-family: $font-family;
+
+	@include tablet {
+		font-size: 1.8rem;
+	}
+}
+
+.text-xxl {
+	font-weight: $bold;
+	font-size: 10rem;
+	line-height: 1;
+	letter-spacing: -5px;
+
+	@include tablet {
+		font-size: 17.5rem;
+	}
+
+	@include desktop {
+		font-size: 20rem;
+	}
+}
+
+.text-xl {
+	font-weight: $bold;
+	font-size: 2rem;
+	line-height: 1.2;
+
+	@include tablet {
+		font-size: 4rem;
+	}
+
+	@include desktop {
+		font-size: 5.6rem;
+	}
+}
+
+.text-l {
+	font-size: 1.5rem;
+	font-weight: $bold;
+	line-height: 1.16;
+	letter-spacing: 4.8px;
+	text-transform: uppercase;
+
+	@include tablet {
+		font-size: 1.8rem;
+	}
+
+	@include desktop {
+		font-size: 2.4rem;
+	}
+}
+
+.text-m {
+	font-size: 1.5rem;
+	font-weight: $regular;
+	line-height: 1.4;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+
+	@include tablet {
+		font-size: 1.8rem;
+	}
+
+	@include desktop {
+		font-size: 2rem;
+	}
+}
+
+.text-s {
+	font-weight: $bold;
+	font-size: 1.2rem;
+	line-height: 1.5;
+
+	@include tablet {
+		font-size: 1.8rem;
+	}
+}
+
+.text-xs {
+	font-weight: $bold;
+	font-size: 1rem;
+	line-height: 1.86;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+
+	@include tablet {
+		font-size: 1.3rem;
+	}
+
+	@include desktop {
+		font-size: 1.5rem;
+	}
+}
