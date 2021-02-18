@@ -4,13 +4,15 @@ html {
 
 body {
   font-size: 1.2rem;
-  line-height: 1.5;
+  line-height: 1.8;
   font-family: "Inter", sans-serif;
+  text-shadow: 0 0 1px #000;
 }
 
 @media screen and (min-width: 768px) {
   body {
     font-size: 1.8rem;
+    line-height: 1.5;
   }
 }
 
@@ -123,10 +125,284 @@ body {
   }
 }
 
+.timezone {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .timezone {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .timezone {
+    font-size: 4rem;
+  }
+}
+
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body.day {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/mobile/bg-image-daytime.jpg) no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/mobile/bg-image-daytime.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  body.day {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/tablet/bg-image-daytime.jpg) no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/tablet/bg-image-daytime.jpg) no-repeat fixed;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body.day {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/desktop/bg-image-daytime.jpg) no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/desktop/bg-image-daytime.jpg) no-repeat fixed;
+    background-size: cover;
+  }
+}
+
+body.night {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/mobile/bg-image-nighttime.jpg) no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/mobile/bg-image-nighttime.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  body.night {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/tablet/bg-image-nighttime.jpg) no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/tablet/bg-image-nighttime.jpg) no-repeat fixed;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body.night {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/desktop/bg-image-nighttime.jpg) no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/desktop/bg-image-nighttime.jpg) no-repeat fixed;
+    background-size: cover;
+  }
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 83%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 77%;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.btn {
+  background: #fff;
+  border-radius: 2.8rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 3.75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+}
+
+.btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.btn:hover .btn-arrow {
+  opacity: 0.5;
+}
+
+.btn-arrow {
+  width: 32px;
+  height: 32px;
+  margin-left: 1rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media screen and (min-width: 768px) {
+  .btn-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.header {
+  color: #fff;
+  padding: 3.1rem 0 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 8rem 0 6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 5.5rem 0 10rem;
+  }
+}
+
+.header .quote-container {
+  margin: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .header .quote-container {
+    width: 50%;
+  }
+}
+
+.header .quote {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.header .quote p {
+  width: 92%;
+}
+
+.header .refresh {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .header .header-content {
+    position: relative;
+  }
+}
+
+.header .greeting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .time-icon {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background: url(../../images/icons/icon-sun.svg);
+  margin-right: 1.6rem;
+}
+
+.header .currently {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header .currently {
+    display: inline-block;
+  }
+}
+
+.header .time {
+  margin: 1.6rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header .time {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header .time {
+    margin: 1.6rem 0;
+  }
+}
+
+.header .location {
+  margin-bottom: 4.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header .location {
+    margin-bottom: 8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header .location {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header .btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

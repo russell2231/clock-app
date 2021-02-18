@@ -3,3 +3,62 @@
 *::after {
 	box-sizing: border-box;
 }
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body.day {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../../images/mobile/bg-image-daytime.jpg) no-repeat fixed;
+	background-size: cover;
+
+	@include tablet {
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url(../../images/tablet/bg-image-daytime.jpg) no-repeat fixed;
+		background-size: cover;
+	}
+
+	@include desktop {
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url(../../images/desktop/bg-image-daytime.jpg) no-repeat fixed;
+		background-size: cover;
+	}
+}
+
+body.night {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../../images/mobile/bg-image-nighttime.jpg) no-repeat fixed;
+	background-size: cover;
+
+	@include tablet {
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url(../../images/tablet/bg-image-nighttime.jpg) no-repeat fixed;
+		background-size: cover;
+	}
+
+	@include desktop {
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url(../../images/desktop/bg-image-nighttime.jpg) no-repeat fixed;
+		background-size: cover;
+	}
+}
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+
+	@include tablet {
+		width: 83%;
+	}
+
+	@include desktop {
+		width: 77%;
+	}
+}
+
+p {
+	margin: 0;
+}

@@ -4,11 +4,13 @@ html {
 
 body {
 	font-size: 1.2rem;
-	line-height: 1.5;
+	line-height: 1.8;
 	font-family: $font-family;
+	text-shadow: 0 0 1px #000;
 
 	@include tablet {
 		font-size: 1.8rem;
+		line-height: 1.5;
 	}
 }
 
@@ -96,5 +98,19 @@ body {
 
 	@include desktop {
 		font-size: 1.5rem;
+	}
+}
+
+.timezone {
+	font-size: 1.5rem;
+	font-weight: $light;
+	letter-spacing: 0;
+
+	@include tablet {
+		font-size: 3.2rem;
+	}
+
+	@include desktop {
+		font-size: 4rem;
 	}
 }

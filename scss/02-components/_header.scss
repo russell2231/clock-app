@@ -1,0 +1,99 @@
+.header {
+	color: $white;
+	padding: 3.1rem 0 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+
+	@include tablet {
+		padding: 8rem 0 6rem;
+	}
+
+	@include desktop {
+		padding: 5.5rem 0 10rem;
+	}
+
+	.quote-container {
+		margin: 0;
+
+		@include desktop {
+			width: 50%;
+		}
+	}
+
+	.quote {
+		margin: 0;
+		display: flex;
+		align-items: start;
+		justify-content: space-between;
+		margin-bottom: 0.8rem;
+
+		p {
+			width: 92%;
+		}
+	}
+
+	.refresh {
+		cursor: pointer;
+	}
+
+	.header-content {
+		@include desktop {
+			position: relative;
+		}
+	}
+
+	.greeting {
+		display: flex;
+		align-items: center;
+	}
+
+	.time-icon {
+		display: inline-block;
+		width: 23px;
+		height: 23px;
+		background: url(../../images/icons/icon-sun.svg);
+		margin-right: 1.6rem;
+	}
+
+	.currently {
+		display: none;
+
+		@include tablet {
+			display: inline-block;
+		}
+	}
+
+	.time {
+		margin: 1.6rem 0;
+
+		@include tablet {
+			margin: 0;
+		}
+
+		@include desktop {
+			margin: 1.6rem 0;
+		}
+	}
+
+	.location {
+		margin-bottom: 4.8rem;
+
+		@include tablet {
+			margin-bottom: 8rem;
+		}
+
+		@include desktop {
+			margin-bottom: 0;
+		}
+	}
+
+	.btn {
+		@include desktop {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+	}
+}
