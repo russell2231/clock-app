@@ -86,7 +86,7 @@ body {
 }
 
 .text-xs {
-	font-weight: $bold;
+	font-weight: $regular;
 	font-size: 1rem;
 	line-height: 1.86;
 	letter-spacing: 3px;
@@ -101,7 +101,7 @@ body {
 	}
 }
 
-.timezone {
+.timezone-abr {
 	font-size: 1.5rem;
 	font-weight: $light;
 	letter-spacing: 0;

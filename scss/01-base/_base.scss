@@ -19,12 +19,20 @@ body.day {
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 			url(../../images/tablet/bg-image-daytime.jpg) no-repeat fixed;
 		background-size: cover;
+
+		.card:nth-of-type(2n) {
+			border-left: 1px solid rgba($color: #303030, $alpha: 0.25);
+		}
 	}
 
 	@include desktop {
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 			url(../../images/desktop/bg-image-daytime.jpg) no-repeat fixed;
 		background-size: cover;
+	}
+
+	.info {
+		background: radial-gradient(circle at bottom, $white, #cacaca);
 	}
 }
 
@@ -37,12 +45,57 @@ body.night {
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 			url(../../images/tablet/bg-image-nighttime.jpg) no-repeat fixed;
 		background-size: cover;
+
+		.card:nth-of-type(2n) {
+			border-left: 1px solid rgba($color: $white, $alpha: 0.25);
+		}
 	}
 
 	@include desktop {
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 			url(../../images/desktop/bg-image-nighttime.jpg) no-repeat fixed;
 		background-size: cover;
+	}
+
+	.info {
+		background: radial-gradient(circle at top, rgba(0, 0, 0, 0.6), $black);
+		color: $white;
+	}
+}
+
+body.open {
+	.header {
+		height: 60%;
+
+		@include tablet {
+			height: 65%;
+		}
+		@include desktop {
+			height: 45%;
+		}
+	}
+
+	.quote-container {
+		display: none;
+	}
+
+	.header-content {
+		padding-top: 10rem;
+
+		@include tablet {
+			padding-top: 7rem;
+		}
+	}
+
+	.info {
+		height: 40%;
+
+		@include tablet {
+			height: 35%;
+		}
+		@include desktop {
+			height: 55%;
+		}
 	}
 }
 
@@ -61,4 +114,15 @@ body.night {
 
 p {
 	margin: 0;
+}
+
+.grid {
+	display: grid;
+}
+
+.grid-col-2 {
+	@include tablet {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0 8rem;
+	}
 }

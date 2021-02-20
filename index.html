@@ -20,8 +20,8 @@
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
-	<body class="day">
-		<header class="container header">
+	<body class="night">
+		<section class="container header">
 			<figure class="quote-container">
 				<blockquote class="quote">
 					<p>
@@ -53,7 +53,9 @@
 					<span class="time-greet">Good Morning</span
 					><span class="currently">, It's Currently</span>
 				</p>
-				<p class="text-xxl time">11:37 <span class="timezone">EST</span></p>
+				<h1 class="text-xxl time">
+					11:37 <span class="timezone-abr">EST</span>
+				</h1>
 				<p class="text-l location">
 					In <span class="city">Cincinnati</span>,
 					<span class="country">USA</span>
@@ -63,7 +65,28 @@
 					<img src="images/icons/icon-arrow-up.svg" alt="" class="btn-arrow" />
 				</button>
 			</div>
-		</header>
+		</section>
+
+		<section class="info">
+			<div class="container grid grid-col-2">
+				<div class="current-timezone card">
+					<h2 class="text-xs">Current Timezone</h2>
+					<p class="timezone text-xl">USA/New York</p>
+				</div>
+				<div class="year-day card">
+					<h2 class="text-xs">Day of the Year</h2>
+					<p class="year text-xl">49</p>
+				</div>
+				<div class="week-day card">
+					<h2 class="text-xs">Day of the Week</h2>
+					<p class="day text-xl">4</p>
+				</div>
+				<div class="week-number card">
+					<h2 class="text-xs">Week Number</h2>
+					<p class="week text-xl">7</p>
+				</div>
+			</div>
+		</section>
 
 		<script src="js/index.js"></script>
 	</body>
