@@ -16,20 +16,15 @@
 			rel="stylesheet"
 		/>
 
-		<title>Frontend Mentor | Clock App</title>
+		<title>Clock App</title>
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
-	<body class="night">
+	<body>
 		<section class="container header">
 			<figure class="quote-container">
 				<blockquote class="quote">
-					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
-						molestias alias quos libero saepe, ratione ipsa ut optio nesciunt
-						voluptates qui, reprehenderit, incidunt praesentium autem!
-						Blanditiis quas quam numquam accusamus!
-					</p>
+					<p></p>
 					<svg
 						class="refresh"
 						width="18"
@@ -44,24 +39,25 @@
 						/>
 					</svg>
 				</blockquote>
-				<figcaption class="text-s">Russell Rice</figcaption>
+				<figcaption class="text-s author"></figcaption>
 			</figure>
 
 			<div class="header-content">
 				<p class="text-m greeting">
 					<span class="time-icon"></span>
-					<span class="time-greet">Good Morning</span
+					<span class="time-greet"></span
 					><span class="currently">, It's Currently</span>
 				</p>
 				<h1 class="text-xxl time">
-					11:37 <span class="timezone-abr">EST</span>
+					<span class="time-display"></span>
+					<span class="timezone-abr"></span>
 				</h1>
 				<p class="text-l location">
 					In <span class="city">Cincinnati</span>,
 					<span class="country">USA</span>
 				</p>
 				<button class="btn">
-					More
+					<span>More</span>
 					<img src="images/icons/icon-arrow-up.svg" alt="" class="btn-arrow" />
 				</button>
 			</div>
@@ -71,23 +67,24 @@
 			<div class="container grid grid-col-2">
 				<div class="current-timezone card">
 					<h2 class="text-xs">Current Timezone</h2>
-					<p class="timezone text-xl">USA/New York</p>
+					<p class="timezone text-xl"></p>
 				</div>
 				<div class="year-day card">
 					<h2 class="text-xs">Day of the Year</h2>
-					<p class="year text-xl">49</p>
+					<p class="year text-xl"></p>
 				</div>
 				<div class="week-day card">
 					<h2 class="text-xs">Day of the Week</h2>
-					<p class="day text-xl">4</p>
+					<p class="day text-xl"></p>
 				</div>
 				<div class="week-number card">
 					<h2 class="text-xs">Week Number</h2>
-					<p class="week text-xl">7</p>
+					<p class="week text-xl"></p>
 				</div>
 			</div>
 		</section>
 
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 		<script src="js/index.js"></script>
 	</body>
 </html>

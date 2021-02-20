@@ -143,6 +143,18 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .timezone.long {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .timezone.long {
+    font-size: 5.6rem;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -181,6 +193,10 @@ body.day {
   }
 }
 
+body.day .time-icon {
+  background: url(../../images/icons/icon-sun.svg);
+}
+
 body.day .info {
   background: radial-gradient(circle at bottom, #fff, #cacaca);
 }
@@ -208,6 +224,10 @@ body.night {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/desktop/bg-image-nighttime.jpg) no-repeat fixed;
     background-size: cover;
   }
+}
+
+body.night .time-icon {
+  background: url(../../images/icons/icon-moon.svg);
 }
 
 body.night .info {
@@ -427,7 +447,6 @@ p {
   display: inline-block;
   width: 23px;
   height: 23px;
-  background: url(../../images/icons/icon-sun.svg);
   margin-right: 1.6rem;
 }
 

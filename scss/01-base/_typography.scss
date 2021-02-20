@@ -114,3 +114,12 @@ body {
 		font-size: 4rem;
 	}
 }
+
+.timezone.long {
+	@include tablet {
+		font-size: 3rem;
+	}
+	@include desktop {
+		font-size: 5.6rem;
+	}
+}

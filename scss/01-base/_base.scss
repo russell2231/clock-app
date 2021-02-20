@@ -31,6 +31,10 @@ body.day {
 		background-size: cover;
 	}
 
+	.time-icon {
+		background: url(../../images/icons/icon-sun.svg);
+	}
+
 	.info {
 		background: radial-gradient(circle at bottom, $white, #cacaca);
 	}
@@ -55,6 +59,10 @@ body.night {
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 			url(../../images/desktop/bg-image-nighttime.jpg) no-repeat fixed;
 		background-size: cover;
+	}
+
+	.time-icon {
+		background: url(../../images/icons/icon-moon.svg);
 	}
 
 	.info {
